@@ -17,9 +17,12 @@ final class PersonInfoViewController: UIViewController {
 
     override func viewDidLoad() {
         super.viewDidLoad()
+        view.addVerticalGradientLayer()
+        
         fullNameLabel.text = person.fullName
         emailLabel.text = person.email
         phoneNumberLabel.text = person.phoneNumber
 
+        [fullNameLabel, emailLabel, phoneNumberLabel].forEach {$0?.textColor = .white }
     }
 }

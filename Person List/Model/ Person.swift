@@ -20,7 +20,14 @@ struct Person {
     static func getPersonList() -> [Person] {
         let dataManager = DataManager()
 
+        dataManager.names.shuffled()
+        dataManager.surnames.shuffled()
+        dataManager.phoneNumbers.shuffled()
+        dataManager.emails.shuffled()
+
         var person: [Person] = []
+
+        for _ in 1...10 {
 
         let names = dataManager.names.randomElement() ?? ""
         let surnames = dataManager.surnames.randomElement() ?? ""
@@ -28,7 +35,7 @@ struct Person {
         let phoneNumbers = dataManager.phoneNumbers.randomElement() ?? ""
 
         person.append(Person(name: names, surname: surnames, email: emails, phoneNumber: phoneNumbers))
-
+        }
         return person
     }
 }

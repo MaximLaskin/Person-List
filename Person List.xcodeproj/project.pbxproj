@@ -17,6 +17,7 @@
 		43AF8CF028BD67FE00696926 /*  Person.swift in Sources */ = {isa = PBXBuildFile; fileRef = 43AF8CEF28BD67FE00696926 /*  Person.swift */; };
 		43DCCD4428BFB29E001D79E5 /* CustomTableViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 43DCCD4328BFB29E001D79E5 /* CustomTableViewCell.swift */; };
 		43DCCD4628BFCE71001D79E5 /* PersonInfoViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 43DCCD4528BFCE71001D79E5 /* PersonInfoViewController.swift */; };
+		43DCCD4828BFEE03001D79E5 /* GradientView+.swift in Sources */ = {isa = PBXBuildFile; fileRef = 43DCCD4728BFEE03001D79E5 /* GradientView+.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -32,6 +33,7 @@
 		43AF8CEF28BD67FE00696926 /*  Person.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = " Person.swift"; sourceTree = "<group>"; };
 		43DCCD4328BFB29E001D79E5 /* CustomTableViewCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CustomTableViewCell.swift; sourceTree = "<group>"; };
 		43DCCD4528BFCE71001D79E5 /* PersonInfoViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PersonInfoViewController.swift; sourceTree = "<group>"; };
+		43DCCD4728BFEE03001D79E5 /* GradientView+.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "GradientView+.swift"; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -105,10 +107,19 @@
 				43A6A5A828BF76AB0096637B /* ViewControllers */,
 				43A6A5A728BF76930096637B /* Model */,
 				43A6A5A928BF76FF0096637B /* Storyboard */,
+				43DCCD4928BFF53E001D79E5 /* Extencion */,
 				43A6A5AA28BF776E0096637B /* Support Files */,
 				43AF8CE728BD60A000696926 /* Info.plist */,
 			);
 			path = "Person List";
+			sourceTree = "<group>";
+		};
+		43DCCD4928BFF53E001D79E5 /* Extencion */ = {
+			isa = PBXGroup;
+			children = (
+				43DCCD4728BFEE03001D79E5 /* GradientView+.swift */,
+			);
+			path = Extencion;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -184,6 +195,7 @@
 			files = (
 				43DCCD4428BFB29E001D79E5 /* CustomTableViewCell.swift in Sources */,
 				43AF8CDA28BD609D00696926 /* AppDelegate.swift in Sources */,
+				43DCCD4828BFEE03001D79E5 /* GradientView+.swift in Sources */,
 				43A6A5A628BF76860096637B /* Data Manager.swift in Sources */,
 				43AF8CDC28BD609D00696926 /* SceneDelegate.swift in Sources */,
 				43AF8CEE28BD651300696926 /* PersonListTViewController.swift in Sources */,

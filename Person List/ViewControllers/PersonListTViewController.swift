@@ -11,10 +11,6 @@ final class PersonListTViewController: UITableViewController {
 
     private var personList = Person.getPersonList()
 
-    override func viewDidLoad() {
-        super.viewDidLoad()
-    }
-
     // MARK: - Table view data source
 
     override func tableView(_ tableView: UITableView, numberOfRowsInSection section: Int) -> Int {
@@ -32,23 +28,15 @@ final class PersonListTViewController: UITableViewController {
 
             cell.contentConfiguration = content
 
-            //   cell.fullNameLabel.text = person.fullName
-
             return cell
         }
         return UITableViewCell()
     }
 
-//    override func tableView(_ tableView: UITableView, heightForHeaderInSection section: Int) -> CGFloat {
-//        80
-//    }
-
     // MARK: - Table view delegate
 
     override func tableView(_ tableView: UITableView, didSelectRowAt indexPath: IndexPath) {
         tableView.deselectRow(at: indexPath, animated: true)
-
-
     }
 
     // MARK: - Navigation
